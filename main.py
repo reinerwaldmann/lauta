@@ -65,6 +65,8 @@ def wrapper (required, boardLength):
     :param boardLength: длина материала
     :return: текстовую запись
     """
+
+
     if ifexceeds(required, boardLength):
         print ("Один из размеров в списке запроса превышает размер материала")
         exit(0)
@@ -72,7 +74,7 @@ def wrapper (required, boardLength):
     detlist=determine(required, boardLength);
 
 
-    print ("Количество досок", len (detlist))
+    print ("Количество материала", len (detlist))
 
     for v in detlist:
         print (v["left"].__str__().rjust(5),"\t"  ,  v["sawmap"].__str__().rjust(5), "\n")
@@ -80,7 +82,7 @@ def wrapper (required, boardLength):
 
 
 
-
+print ("LAUTA 1.0\n")
 #входные данные
 boardLength=6
 
